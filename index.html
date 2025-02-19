@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar ">
+            <ul class="sidebar">
+                <li><a href="#" class="logo" onclick="hideSidebar()"><i class='bx bx-x' ></i></a></li>
+                <li><a href="#home" class="sidebar-link">Home</a></li>
+                <li><a href="#services" class="sidebar-link">Services</a></li>
+                <li><a href="#about" class="sidebar-link">About us</a></li>
+                <li><a href="#contact" class="sidebar-link">Contact us</a></li>
+                <li><a href="#faqs" class="sidebar-link">FAQS</a></li>
+            </ul>
+            <ul class="nav-links">
+                <li><a href="#" class="logo">Logo</a></li>
+                <li><a href="#home" class="nav-link hideOnmobile">Home</a></li>
+                <li><a href="#services" class="nav-link hideOnmobile">Services</a></li>
+                <li><a href="#about" class="nav-link hideOnmobile">About us</a></li>
+                <li><a href="#contact" class="nav-link hideOnmobile">Contact us</a></li>
+                <li><a href="#faqs" class="nav-link hideOnmobile">FAQS</a></li>
+                <li><a href="#" class="menu-btn" onclick="showsidebar()"><i class='bx bx-menu'></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+        function showsidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+    </script>
+    
+</body>
+</html>
